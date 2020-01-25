@@ -14,6 +14,9 @@ namespace exercise_21
       Console.WriteLine("Give the second number!");
       string num2 = Console.ReadLine();
       int intValue2 = Convert.ToInt32(num2);
+      double average = (intValue + intValue2) / 2.0;
+      Console.WriteLine("The average is " + average);
+
 
 
     }

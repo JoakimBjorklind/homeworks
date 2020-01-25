@@ -14,7 +14,7 @@ namespace exercise_19
       Console.WriteLine("Give the second number!");
       string num2 = Console.ReadLine();
       int intValue2 = Convert.ToInt32(num2);
-      Console.WriteLine(intValue + intValue2 + (intValue + intValue2));
+      Console.WriteLine(intValue + " + " + intValue2 + " = " + (intValue + intValue2));
 
 
 
