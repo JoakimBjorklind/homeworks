@@ -8,6 +8,12 @@ namespace exercise_42
     {
 
       // Write your code here:
+      int num = Convert.ToInt32(Console.ReadLine());
+      int num2 = Convert.ToInt32(Console.ReadLine());
+      int sum = num + num2;
+      double squareRoot = Math.Sqrt(sum);
+      Console.WriteLine(squareRoot);
+
     
     }
   }
