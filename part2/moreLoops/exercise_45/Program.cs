@@ -8,7 +8,7 @@ namespace exercise_45
     {
 
       // Write your code here:
-      int num = Convert.ToInt32(Console.ReadLine());
+      int num = Convert.ToInt32(Console.ReadLine));
       int number = 0;
 
       while (num >= number)
