@@ -17,6 +17,8 @@ namespace exercise_66
         }
         list.Add(input);
       }
+      var item = list[list.Count -1];
+      Console.WriteLine(item);
 
     }
   }

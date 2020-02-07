@@ -6,7 +6,7 @@ namespace exercise_61
   {
     public static void Main(String[] args)
     {
-      ChristmasTree(4);
+      ChristmasTree(8);
     }
 
     public static void PrintStars(int number)
@@ -43,18 +43,28 @@ namespace exercise_61
 
     public static void ChristmasTree(int height)
     {
-      int left = height -1;
       
-      for (int i = 1; i <= height; i++)
+      
+      for (int i = 1; i < height + 1; i++)
       {
         
-        PrintSpaces(left);
-        PrintStars(i);
-        left--;
+        PrintSpaces(height -i);
+
+        
+        PrintStars(2*i -1);
+
+        
+        
         
         
         
           
+      }
+
+      for(int i = 0; i < 2; i++)
+      {
+        PrintSpaces(height -2);
+        PrintStars(3);
       }
 
         

@@ -17,6 +17,7 @@ namespace exercise_64
       lines.Add("give up most of his life for physics and research of many hypothesis. But, this is why");
       lines.Add("you and I have even heard of the quantum theory and atomic structures. Bohr came");
       lines.Add("up with his quantum theory while studying...");
+      Console.WriteLine(lines[-1]);
 
       foreach (string line in lines)
       {
