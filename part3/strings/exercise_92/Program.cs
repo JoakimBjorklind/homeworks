@@ -12,7 +12,7 @@ namespace exercise_92
 
                 int oldest = 0;
                 string name = "";
-                int length = name.Length;
+                
                 
 
                 
@@ -25,16 +25,16 @@ namespace exercise_92
                     }
                     string[] parts = asked.Split(",");
                    
-                    // did not know how to get this part.
-                    if ( )
+                    
+                    if (name.Length < parts[0].Length)
                     {
-                        
+                        name = parts[0];
                     }
                     
                     // I used the following formula to get the age of the oldest person.
                     if (Convert.ToInt32(parts[1]) > oldest)
                     {
-                        oldest = 2020 -  Convert.ToInt32(parts[1]);
+                        oldest = 2020 - Convert.ToInt32(parts[1]);
                         
 
                     }
