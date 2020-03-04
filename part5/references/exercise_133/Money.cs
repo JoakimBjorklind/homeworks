@@ -79,7 +79,7 @@ namespace exercise_133
     public override string ToString()
     {
       string zero = "";
-      if (cents <= 10)
+      if (cents < 10)
       {
         zero = "0";
       }
