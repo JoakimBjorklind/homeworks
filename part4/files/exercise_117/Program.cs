@@ -15,6 +15,7 @@ namespace exercise_117
 
 
             string text = File.ReadAllText(file);
+          
             
             Console.WriteLine(text);
 
