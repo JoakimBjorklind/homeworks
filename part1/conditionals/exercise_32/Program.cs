@@ -14,7 +14,7 @@ namespace exercise_32
       if (mellon == "Mellon")
 
       {
-        Console.WriteLine("Welcome, friend");
+        Console.WriteLine("Welcome, friend!");
       }
 
       else

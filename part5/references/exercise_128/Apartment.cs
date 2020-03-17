@@ -32,7 +32,7 @@ namespace exercise_128
 
     private int Price()
     {
-      return this.squares * this.princePerSquare;
+      return this.squares * this.pricePerSquare;
       
     }
 

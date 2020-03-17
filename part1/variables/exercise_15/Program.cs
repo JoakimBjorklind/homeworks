@@ -22,7 +22,7 @@ namespace exercise_15
       Console.WriteLine("Your string: " + name);
       Console.WriteLine("Your integer: " + num);
       Console.WriteLine("Your double: " + num2);
-      Console.WriteLine("Your boolean: " + truth);
+      Console.WriteLine("Your boolean: " + booleanValue);
 
 
 

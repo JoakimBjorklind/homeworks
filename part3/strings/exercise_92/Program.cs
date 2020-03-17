@@ -10,8 +10,12 @@ namespace exercise_92
             {
                 List<string> persons = new List<string>();
 
-                int oldest = 0;
+                int oldest = 2020;
                 string name = "";
+                int age = 0;
+                int length = 0;
+                int lengthName = 0;
+
                 
                 
 
@@ -25,23 +29,26 @@ namespace exercise_92
                     }
                     string[] parts = asked.Split(",");
                    
-                    
-                    if (name.Length < parts[0].Length)
+                    string word = parts[0];
+                    length = word.Length;
+                    if (lengthName < length)
                     {
+                        lengthName = length;
                         name = parts[0];
                     }
                     
-                    // I used the following formula to get the age of the oldest person.
-                    if (Convert.ToInt32(parts[1]) > oldest)
+                    
+                    if (Convert.ToInt32(parts[1]) < oldest)
                     {
-                        oldest = 2020 - Convert.ToInt32(parts[1]);
+                        oldest = Convert.ToInt32(parts[1]);
                         
 
                     }
                     
                 }
+                age = 2020 - oldest;
                 Console.WriteLine("Longest name: " + name);
-                Console.WriteLine("Highest age: " + oldest);
+                Console.WriteLine("Highest age: " + age);
                 
 
 
