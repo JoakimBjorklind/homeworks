@@ -6,6 +6,7 @@ namespace exercise_104
   {
     public static void Main(string[] args)
     {
+      // oN is 3
       Multiplier multiplyByThree = new Multiplier(3);
 
       Console.WriteLine("multiplyByThree.Multiply(2): " + multiplyByThree.Multiply(2));

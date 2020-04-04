@@ -27,6 +27,15 @@ namespace exercise_130
         // Remember to print
         // "The book is already on the list. Let's not add the same book again."
         // If the list Contains the book
+        if (books.Contains(book))
+        {
+          Console.WriteLine("The book is already on the list. Let's not add the same book again.");
+          continue;
+        }
+        else{
+          books.Add(book);
+        }
+
 
 
 

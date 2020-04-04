@@ -2,12 +2,28 @@
 
 namespace extra_02
 {
-  class Program
-  {
-    public static void Main(string[] args)
+    class Program
     {
-      // Add your code here:
-
+        public static void Main(string[] args)
+        {
+            // Add your code here:
+            Console.WriteLine("Give three numbers:");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            int num3 = Convert.ToInt32(Console.ReadLine());
+            if (num1 > num2 & num1 >num3)
+            {
+                Console.WriteLine("Largest: " + num1);
+            }
+            else if (num2 > num1 & num2 > num3)
+            {
+                Console.WriteLine("Largest: " + num2);
+            }
+            else
+            {
+                Console.WriteLine("Largest: " + num3);
+            }
+            
+        }
     }
-  }
 }

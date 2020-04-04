@@ -13,9 +13,18 @@ namespace exercise_80
 
     }
 
-    public static int SumOfNumbersInArray(int[] numbers) {
+    public static int SumOfNumbersInArray(int[] numbers) 
+    {
+      int sum = 0;
+      foreach (int number in numbers)
+      {
+        sum = sum + number;
+      }
+      {
+         return sum;
+      }
 
-      return 0;
+      
     }
 
   }

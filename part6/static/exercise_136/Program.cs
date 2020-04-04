@@ -17,5 +17,12 @@ namespace exercise_136
     }
 
     // Do something here
+    public static void HowManyNames(Person person)
+    {
+     
+      string[] parts = person.ToString().Split(" ");
+     
+      Console.WriteLine(person.ToString() + " has " + parts.Length + " names.");
+    }
   }
 }

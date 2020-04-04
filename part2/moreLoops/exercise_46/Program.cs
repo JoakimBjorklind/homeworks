@@ -8,6 +8,21 @@ namespace exercise_46
     {
 
       // Write your code here:
+      int num = Convert.ToInt32(Console.ReadLine());
+      int number = 100;
+
+      while (num <= number)
+
+      {
+        Console.WriteLine(num);
+        num++;
+      }
+
+
+
+      
+
+      
 
     }
   }
