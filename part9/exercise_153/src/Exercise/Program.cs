@@ -36,6 +36,7 @@ namespace Exercise
             shippingContainer.Add(movingVan);
 
             Console.WriteLine(shippingContainer);
+
         }
     }
 }
