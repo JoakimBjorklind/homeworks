@@ -1,6 +1,7 @@
 namespace Exercise
 {
   using System;
+  using System.Collections.Generic;
   public class Book : IComparable<Book>
   {
 
@@ -10,6 +11,8 @@ namespace Exercise
     public Book(string name, int age)
     {
       // Fill in the blanks
+      this.name = name;
+      this.age = age;
     }
 
 
@@ -24,8 +27,24 @@ namespace Exercise
     {
 
       // Do some magic here
-      return 0;
-    }
+      
+      if (other == null)
+      {
+        return 1;
+      }
+      if (this.age == other.age)
+      {
+        return this.name.CompareTo(other.name);
+      }
+      if (this.age > other.age)
+      {
+        return 1;
+      }
+      else
+      {
+        return -1;
+      }
 
+    }
   }
 }
