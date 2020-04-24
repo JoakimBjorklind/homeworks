@@ -34,12 +34,12 @@ namespace Exercise
       // Implement the randomization of the numbers by using the method ContainsNumber() here
       Random lotteryRow = new Random();
 
-      for (int i = 0; i < 7; i++)
+      while (this.numbers.Count < 7)
       {
-        int randomNumber = lotteryRow.Next(1, 41);
-        if(!this.numbers.Contains(randomNumber))
+        int lotteryNumbers = lotteryRow.Next(1, 41);
+        if (!ContainsNumber(lotteryNumbers))
         {
-          this.numbers.Add(randomNumber);
+          this.numbers.Add(lotteryNumbers);
         }
       }
       this.numbers.Sort();
