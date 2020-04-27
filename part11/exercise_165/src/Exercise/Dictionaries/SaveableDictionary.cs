@@ -7,6 +7,8 @@ namespace Exercise
     {
         private Dictionary<string, string> translateWords;
         private string file;
+        string word { get; set; }
+        string translation { get; set; }
         public SaveableDictionary()
         {
             this.translateWords = new Dictionary<string, string>();
@@ -19,6 +21,8 @@ namespace Exercise
 
         public void Add(string word, string translation)
         {
+            this.word = word;
+            this.translation = translation;
             if (!this.translateWords.ContainsKey(word))
             {
                 this.translateWords.Add(word, translation);
@@ -93,25 +97,12 @@ namespace Exercise
         {
             foreach (KeyValuePair<string, string> words in this.translateWords)
             {
-                if (words.Key == word)
+                if (words.Key == word || words.Value == word)
                 {
                     this.translateWords.Remove(words.Key);
                 }
-                if (words.Value == word)
-                {
-                    this.translateWords.Remove(words.Key);
-                }
-            }
+            }    
         }
-        // not using this method but writing the foreach in Load() instead
-        /*public void NextLine(string[] words)
-        {
-          foreach (string line in words)
-          {
-            string [] parts = line.Split(":");
-            this.translateWords.Add(parts[0], parts[1]);
-
-          }
-        }*/
+      
     }
 }
